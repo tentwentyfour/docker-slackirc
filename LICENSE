@@ -1,29 +1,3 @@
-# docker-slackirc
-
-Alpine Linux based docker container for [slack-irc](https://github.com/ekmartin/slack-irc).
-
-## Usage:
-
-### Build image:
-
-```
-docker build -t 1024/slackirc .
-```
-
-### Pull from Docker Hub:
-
-```
-docker pull 1024/slackirc
-```
-
-### Run docker-slackirc container:
-
-```
-docker run -d -v /var/docker/slackirc/:/home/ --name slackirc 1024/slackirc --config /home/config.json
-```
-
-## License:
-
 Apache v2.0 License
   Copyright 2015 Martin Simon for TenTwentyFour S.à.r.l
 
