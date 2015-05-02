@@ -24,6 +24,7 @@ docker run -d -v /var/docker/slackirc/:/home/ --name slackirc 1024/slackirc --co
 
 ## License:
 
+```
 Apache v2.0 License
   Copyright 2015 Martin Simon for TenTwentyFour S.à.r.l
 
@@ -38,3 +39,4 @@ Apache v2.0 License
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
+```
