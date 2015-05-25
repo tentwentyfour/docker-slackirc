@@ -9,4 +9,7 @@ RUN \
 RUN \
 	npm install -g slack-irc
 
+ENV NODE_ENV development
+ENV SLACK_LOG_LEVEL debug
+
 ENTRYPOINT ["slack-irc"]
