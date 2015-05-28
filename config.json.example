@@ -1,31 +1,20 @@
-[
-	// Bot 1:
-	{
-		"nickname": "test",
-		"server": "irc.bottest.org",
-		"token": "slacktoken", // Your bot user's token
-		"autoSendCommands": [ // Commands that will be sent on connect
-			["PRIVMSG", "NickServ", "IDENTIFY password"],
-			["MODE", "test", "+x"],
-			["AUTH", "test", "password"]
-		],
-		"channelMapping": { // Maps each Slack-channel to an IRC-channel, used to direct messages to the correct place
-			"#slack": "#irc channel-password", // Add channel keys after the channel name
-			"privategroup": "#other-channel" // No hash in front of private groups
-		},
-		"ircOptions": { // Optional node-irc options
-			"floodProtection": false, // On by default
-			"floodProtectionDelay": 1000 // 500 by default
-		}
+[{
+	"nickname": "wormhole",
+	"server": "irc.example.com",
+	"token": "your_slack_token",
+        "autoSendCommands": [
+        ["PRIVMSG", "NickServ", "IDENTIFY your_nickserv_password"]
+        ],
+	"channelMapping": {
+		"#slack_channel": "#irc_channel"
 	},
-
-	// Bot 2:
-	{
-		"nickname": "test2",
-		"server": "irc.testbot.org",
-		"token": "slacktoken2",
-		"channelMapping": {
-			"#other-slack": "#new-irc-channel"
-		}
+	"ircOptions": {
+		"port": 6697,
+		"debug": true,
+		"password": "irc_server_password",
+                "selfSigned": true,
+                "sasl": true,
+                "secure": true,
+		"floodProtection": false
 	}
-]
+}]

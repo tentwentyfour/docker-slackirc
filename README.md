@@ -1,6 +1,6 @@
 # docker-slackirc
 
-Alpine Linux based docker container for [slack-irc](https://github.com/ekmartin/slack-irc).
+Lightweight (under 27MB) Alpine Linux based docker container for [slack-irc](https://github.com/ekmartin/slack-irc).
 
 ## Usage:
 
@@ -10,7 +10,7 @@ Alpine Linux based docker container for [slack-irc](https://github.com/ekmartin/
 docker build -t 1024/slackirc .
 ```
 
-### Pull from Docker Hub:
+### Pull from [Docker Hub](https://registry.hub.docker.com/u/1024/slackirc/):
 
 ```
 docker pull 1024/slackirc
